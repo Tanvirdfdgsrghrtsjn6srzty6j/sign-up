@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Norse font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-flex">
+      <div class="leafy">
+        <img src="nigesh.jpg" alt="" class="first-img" />
+        <div class="second-img-bg">
+          <span class="odin-norse">Odin</span>
+          <img src="odin-lined.png" alt="" class="second-img" />
+        </div>
+      </div>
+      <div class="lorem">
+        <pre>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Morbi in libero malesuada, lobortis augue a, finibus lacus.
+Aliquam erat volutpat. Phasellus vel sagittis libero, at rutrum ante. 
+Aenean sollicitudin a arcu nec feugiat. Cras quis massa justo.
+        </pre>
+        <form class="signup-form" action="/submit" method="POST">
+          <div class="signup-row">
+            <input
+              type="text"
+              name="fullname"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="signup-row">
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+            <input type="text" name="address" placeholder="Address" required />
+          </div>
+          <div class="signup-row">
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              required
+            />
+          </div>
+          <button type="submit">Create Account</button>
+          <div class="login-link">
+            Already have an account?
+            <a href="/login">Log in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
